@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      background-color: #39322a;
+      margin: 0;
+    }
+
+    #webgl {
+      pointer-events: none;
+    }
+
+    #ui-app {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    #ui {
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    #monitor-videos {
+      pointer-events: none;
+      position: 'absolute';
+      opacity: 0;
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+
+    #css {
+      cursor: pointer;
+    }
+
+    #ui-interactive {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 256px;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      pointer-events: none;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+  </style>
+
+  <!-- Primary Meta Tags -->
+  <title>Mandlenkosi - Dev Portfolio</title>
+  <meta name="title" content="Mandlenkosi Marwanqana -Fullstack Developer">
+  <meta name="description"
+    content="A Certified Full Stack developer, specilaising in crafting solid, pixel-perfect and highly scalable frontend and backend products with great user experiences.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mandlenkosi Marwanqana -Fullstack Developer">
+  <meta property="og:description"
+    content="A Certified Full Stack developer, specilaising in crafting solid, pixel-perfect and highly scalable frontend and backend products with great user experiences.">
+
+  <!-- Twitter -->
+
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta property="twitter:title" content="Mandlenkosi Marwanqana -Fullstack Developer">
+  <meta name="twitter:title" content="Mandlenkosi Marwanqana -Fullstack Developer">
+
+  <meta property="twitter:description"
+    content="A Certified Full Stack developer, specilaising in crafting solid, pixel-perfect and highly scalable frontend and backend products with great user experiences.">
+  <meta name="twitter:description"
+    content="A Certified Full Stack developer, specilaising in crafting solid, pixel-perfect and highly scalable frontend and backend products with great user experiences.">
+
+  <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+
+ 
+</head>
+
+<body>
+  <div id="css"></div>
+  <div id="webgl"></div>
+  <div id="overlay"></div>
+  <div id="ui-interactive"></div>
+  <div id="ui"></div>
+  <div id="monitor-videos">
+    <video id="video-1" muted loop autoplay width="0" height="0" src="../static/textures/monitor/video/base-static.mp4"
+      style="opacity: 0;"></video>
+    <video id="video-2" muted loop autoplay width="0" height="0"
+      src="../static/textures/monitor/video/static-texture-layer.mp4" style="opacity: 0;"></video>
+  </div>
+</body>
+
+</html>
